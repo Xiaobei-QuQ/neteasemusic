@@ -6,8 +6,8 @@
     var xhr = new XMLHttpRequest()
     xhr.open('GET','/neteasemusic/cate.json',true)
     xhr.send()
-    xhr.onlocad = function(data){
-      console.log(data)
+    xhr.onlocad = function(){
+      console.log(JSON.parse(xhr.responseText))
     }
   </script>
 </body>
